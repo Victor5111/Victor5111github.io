@@ -73,7 +73,7 @@
     <div class="container-fluid">
       <!-- 5. Logo i text -->
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="https://Victor5111.github.io/logo.png" alt="Logo" class="logo rounded-circle me-2">
+        <img src="https://aleix321.github.io/logo.png" alt="Logo" class="logo rounded-circle me-2">
         <span class="fw-bold">Web d'alumne</span>
       </a>
          <!-- Menú -->
@@ -100,17 +100,19 @@
               <li><a class="dropdown-item" href="https://Victor5111.github.io/robot2"><i class="fa-solid fa-book me-1"></i> Robot poeta v2</a></li>
               <li><a class="dropdown-item" href="https://Victor5111.github.io/robot3"><i class="fa-solid fa-book-open me-1"></i> Robot poeta v3</a></li>
             </ul>
-            <!-- Arduino -->
+          </li>
+            <!-- Arduino ESP 32 -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="proj2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-folder-open me-1"></i> Arduino
             </a>
             <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
               <li><a class="dropdown-item" href="https://Victor5111.github.io/blinking"><i class="fa-solid fa-robot me-1"></i>Blinking</a></li>
-              <li><a class="dropdown-item" href="https://Victor5111.github.io/temperatura"><i class="fa-solid fa-book me-1"></i>Temperatura</a></li>
-              <li><a class="dropdown-item" href="https://Victor5111.github.io/semafor"><i class="fa-solid fa-book-open me-1"></i>Semafor</a></li>
-          </li> 
-         <!-- Joc Pong -->
+              <li><a class="dropdown-item" href="https://Victor5111.github.io/semafor"><i class="fa-solid fa-book me-1"></i> Semàfor</a></li>
+              <li><a class="dropdown-item" href="https://Victor5111.github.io/temperatura"><i class="fa-solid fa-book-open me-1"></i>Temperatura</a></li>
+            </ul>
+          </li>
+           <!-- Joc Pong -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="proj2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-folder-open me-1"></i> Pong
@@ -123,7 +125,8 @@
               <li><a class="dropdown-item" href="https://Victor5111.github.io/pong-v5"><i class="fa-solid fa-table-tennis-paddle-ball me-1"></i> Pong v5</a></li>
               <li><a class="dropdown-item" href="https://Victor5111.github.io/pong-v6"><i class="fa-solid fa-table-tennis-paddle-ball me-1"></i>Pong v6</a></li>
             </ul>
-          </lil>
+          </li>
+        </ul>
         <!-- Botó mode clar/fosc -->
         <button id="themeToggle" class="ms-2"><i class="fa-solid fa-moon"></i></button>
       </div>
@@ -139,7 +142,7 @@
 
   <!-- Contingut -->
   <main class="container py-5">
-    <h1 class="display-5 fw-bold mb-4">Benvinguts a la web de Victor</h1>
+    <h1 class="display-5 fw-bold mb-4">Benvinguts a la web d'Aleix</h1>
     <p class="lead">Aquesta es la web de la optativa de robotica de 3er d'ESO feta al <a href="https://agora.xtec.cat/ies-pompeu-fabra-martorell/">institut Pompeu Fabra Martorell</a></p>
     <p class="lead">Aquest projecte es per el <a href="https://www.unesco.org/es/days/poetry"> dia mundial de la poesia de la UNESCO<a> que sera el 21 de març de 2026. L'objectiu es fer un robot poeta, necesitem aprendre tres idiomes 
       <ul>
@@ -154,7 +157,11 @@
     </main>  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
+<script> let valor = 0;
+function incrementa() {
+  valor++;
+  document.getElementById('compte').innerText = valor;
+}
     // Mode clar/fosc amb canvi d'icona
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = themeToggle.querySelector('i');
